@@ -1,0 +1,15 @@
+D:\Git\User_1\Git-Task\ConsoleProjectVisualStudio\ConsoleProjectVisualStudio\bin\Debug\net6.0\ConsoleProjectVisualStudio.exe
+D:\Git\User_1\Git-Task\ConsoleProjectVisualStudio\ConsoleProjectVisualStudio\bin\Debug\net6.0\ConsoleProjectVisualStudio.deps.json
+D:\Git\User_1\Git-Task\ConsoleProjectVisualStudio\ConsoleProjectVisualStudio\bin\Debug\net6.0\ConsoleProjectVisualStudio.runtimeconfig.json
+D:\Git\User_1\Git-Task\ConsoleProjectVisualStudio\ConsoleProjectVisualStudio\bin\Debug\net6.0\ConsoleProjectVisualStudio.dll
+D:\Git\User_1\Git-Task\ConsoleProjectVisualStudio\ConsoleProjectVisualStudio\bin\Debug\net6.0\ConsoleProjectVisualStudio.pdb
+D:\Git\User_1\Git-Task\ConsoleProjectVisualStudio\ConsoleProjectVisualStudio\obj\Debug\net6.0\ConsoleProjectVisualStudio.csproj.AssemblyReference.cache
+D:\Git\User_1\Git-Task\ConsoleProjectVisualStudio\ConsoleProjectVisualStudio\obj\Debug\net6.0\ConsoleProjectVisualStudio.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\User_1\Git-Task\ConsoleProjectVisualStudio\ConsoleProjectVisualStudio\obj\Debug\net6.0\ConsoleProjectVisualStudio.AssemblyInfoInputs.cache
+D:\Git\User_1\Git-Task\ConsoleProjectVisualStudio\ConsoleProjectVisualStudio\obj\Debug\net6.0\ConsoleProjectVisualStudio.AssemblyInfo.cs
+D:\Git\User_1\Git-Task\ConsoleProjectVisualStudio\ConsoleProjectVisualStudio\obj\Debug\net6.0\ConsoleProjectVisualStudio.csproj.CoreCompileInputs.cache
+D:\Git\User_1\Git-Task\ConsoleProjectVisualStudio\ConsoleProjectVisualStudio\obj\Debug\net6.0\ConsoleProjectVisualStudio.dll
+D:\Git\User_1\Git-Task\ConsoleProjectVisualStudio\ConsoleProjectVisualStudio\obj\Debug\net6.0\refint\ConsoleProjectVisualStudio.dll
+D:\Git\User_1\Git-Task\ConsoleProjectVisualStudio\ConsoleProjectVisualStudio\obj\Debug\net6.0\ConsoleProjectVisualStudio.pdb
+D:\Git\User_1\Git-Task\ConsoleProjectVisualStudio\ConsoleProjectVisualStudio\obj\Debug\net6.0\ConsoleProjectVisualStudio.genruntimeconfig.cache
+D:\Git\User_1\Git-Task\ConsoleProjectVisualStudio\ConsoleProjectVisualStudio\obj\Debug\net6.0\ref\ConsoleProjectVisualStudio.dll

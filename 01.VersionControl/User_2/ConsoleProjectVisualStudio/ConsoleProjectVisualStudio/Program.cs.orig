@@ -1,0 +1,10 @@
+﻿// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
+Console.WriteLine("Hello, World!");
+Console.WriteLine("Hello, World!");
+
+<<<<<<< HEAD
+Console.WriteLine("ConflictMediation");
+=======
+Console.WriteLine("Conflict started");
+>>>>>>> affa733aa6e28c4508ae3674f3e60f0e5d6e2e44
