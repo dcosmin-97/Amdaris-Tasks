@@ -48,9 +48,11 @@ namespace Arrays_Collections_Generics
             if (firstIndex < 0 || secondIndex < 0)
                 throw new InvalidOperationException("firstIndex < 0 || secondIndex < 0");
 
-            T temp = _items[firstIndex];
-            _items[firstIndex] = _items[secondIndex];
-            _items[secondIndex] = temp;
+            (_items[firstIndex], _items[secondIndex]) = (_items[secondIndex], _items[firstIndex]);
+
+            //T temp = _items[firstIndex];
+            //_items[firstIndex] = _items[secondIndex];
+            //_items[secondIndex] = temp;
         }
 
         public void SwapItems(T firstItem, T secondItem)
@@ -58,12 +60,14 @@ namespace Arrays_Collections_Generics
             if (!_items.Contains(firstItem) || !_items.Contains(secondItem))
                 throw new InvalidOperationException("Item not found");
 
-            var indexItem1 = _items.Select((element, index) => new { element, index }).FirstOrDefault(x => x.element.Equals(firstItem));
-            var indexItem2 = _items.Select((element, index) => new { element, index }).FirstOrDefault(x => x.element.Equals(secondItem));
+            //var indexItem1 = _items.Select((element, index) => new { element, index }).FirstOrDefault(x => x.element.Equals(firstItem));
+            //var indexItem2 = _items.Select((element, index) => new { element, index }).FirstOrDefault(x => x.element.Equals(secondItem));
 
-            var temp = _items[indexItem1.index];
-            _items[indexItem1.index] = _items[indexItem2.index];
-            _items[indexItem2.index] = temp;
+            //var temp = _items[indexItem1.index];
+            //_items[indexItem1.index] = _items[indexItem2.index];
+            //_items[indexItem2.index] = temp;
+
+            SwapItems(Array.IndexOf(_items, firstItem), Array.IndexOf(_items, secondItem));
         }
     }
 }
