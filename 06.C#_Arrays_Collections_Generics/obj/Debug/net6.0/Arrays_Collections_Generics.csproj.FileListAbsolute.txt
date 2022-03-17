@@ -1,0 +1,15 @@
+D:\Amdaris\Amdaris-Tasks\06.C#_Arrays_Collections_Generics\bin\Debug\net6.0\Arrays_Collections_Generics.exe
+D:\Amdaris\Amdaris-Tasks\06.C#_Arrays_Collections_Generics\bin\Debug\net6.0\Arrays_Collections_Generics.deps.json
+D:\Amdaris\Amdaris-Tasks\06.C#_Arrays_Collections_Generics\bin\Debug\net6.0\Arrays_Collections_Generics.runtimeconfig.json
+D:\Amdaris\Amdaris-Tasks\06.C#_Arrays_Collections_Generics\bin\Debug\net6.0\Arrays_Collections_Generics.dll
+D:\Amdaris\Amdaris-Tasks\06.C#_Arrays_Collections_Generics\bin\Debug\net6.0\Arrays_Collections_Generics.pdb
+D:\Amdaris\Amdaris-Tasks\06.C#_Arrays_Collections_Generics\obj\Debug\net6.0\Arrays_Collections_Generics.csproj.AssemblyReference.cache
+D:\Amdaris\Amdaris-Tasks\06.C#_Arrays_Collections_Generics\obj\Debug\net6.0\Arrays_Collections_Generics.GeneratedMSBuildEditorConfig.editorconfig
+D:\Amdaris\Amdaris-Tasks\06.C#_Arrays_Collections_Generics\obj\Debug\net6.0\Arrays_Collections_Generics.AssemblyInfoInputs.cache
+D:\Amdaris\Amdaris-Tasks\06.C#_Arrays_Collections_Generics\obj\Debug\net6.0\Arrays_Collections_Generics.AssemblyInfo.cs
+D:\Amdaris\Amdaris-Tasks\06.C#_Arrays_Collections_Generics\obj\Debug\net6.0\Arrays_Collections_Generics.csproj.CoreCompileInputs.cache
+D:\Amdaris\Amdaris-Tasks\06.C#_Arrays_Collections_Generics\obj\Debug\net6.0\Arrays_Collections_Generics.dll
+D:\Amdaris\Amdaris-Tasks\06.C#_Arrays_Collections_Generics\obj\Debug\net6.0\refint\Arrays_Collections_Generics.dll
+D:\Amdaris\Amdaris-Tasks\06.C#_Arrays_Collections_Generics\obj\Debug\net6.0\Arrays_Collections_Generics.pdb
+D:\Amdaris\Amdaris-Tasks\06.C#_Arrays_Collections_Generics\obj\Debug\net6.0\Arrays_Collections_Generics.genruntimeconfig.cache
+D:\Amdaris\Amdaris-Tasks\06.C#_Arrays_Collections_Generics\obj\Debug\net6.0\ref\Arrays_Collections_Generics.dll
