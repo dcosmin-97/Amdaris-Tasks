@@ -1,0 +1,15 @@
+D:\Amdaris\Amdaris-Tasks\08.C#_Linq\bin\Debug\net6.0\Linq.exe
+D:\Amdaris\Amdaris-Tasks\08.C#_Linq\bin\Debug\net6.0\Linq.deps.json
+D:\Amdaris\Amdaris-Tasks\08.C#_Linq\bin\Debug\net6.0\Linq.runtimeconfig.json
+D:\Amdaris\Amdaris-Tasks\08.C#_Linq\bin\Debug\net6.0\Linq.dll
+D:\Amdaris\Amdaris-Tasks\08.C#_Linq\bin\Debug\net6.0\Linq.pdb
+D:\Amdaris\Amdaris-Tasks\08.C#_Linq\obj\Debug\net6.0\Linq.csproj.AssemblyReference.cache
+D:\Amdaris\Amdaris-Tasks\08.C#_Linq\obj\Debug\net6.0\Linq.GeneratedMSBuildEditorConfig.editorconfig
+D:\Amdaris\Amdaris-Tasks\08.C#_Linq\obj\Debug\net6.0\Linq.AssemblyInfoInputs.cache
+D:\Amdaris\Amdaris-Tasks\08.C#_Linq\obj\Debug\net6.0\Linq.AssemblyInfo.cs
+D:\Amdaris\Amdaris-Tasks\08.C#_Linq\obj\Debug\net6.0\Linq.csproj.CoreCompileInputs.cache
+D:\Amdaris\Amdaris-Tasks\08.C#_Linq\obj\Debug\net6.0\Linq.dll
+D:\Amdaris\Amdaris-Tasks\08.C#_Linq\obj\Debug\net6.0\refint\Linq.dll
+D:\Amdaris\Amdaris-Tasks\08.C#_Linq\obj\Debug\net6.0\Linq.pdb
+D:\Amdaris\Amdaris-Tasks\08.C#_Linq\obj\Debug\net6.0\Linq.genruntimeconfig.cache
+D:\Amdaris\Amdaris-Tasks\08.C#_Linq\obj\Debug\net6.0\ref\Linq.dll
