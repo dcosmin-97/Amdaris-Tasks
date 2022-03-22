@@ -10,7 +10,7 @@ namespace Linq
     {
         public static void Main(string[] args)
         {
-            Filtering();
+            Grouping();
         }
 
 
@@ -33,17 +33,18 @@ namespace Linq
 
             // Where with classic syntax
             var higherStudentsV2 = from students in _students
-                                where students.Year > 2
-                                select students;
+                                   where students.Year > 2
+                                   select students;
             var ownersRomaniaV2 = from users in _users
-                                where users.Country == "Romania"
-                                select users;
+                                  where users.Country == "Romania"
+                                  select users;
             var ownersMultiplePetsV2 = from users in _users
                                        where users.Animals.Count > 1
                                        select users;
 
 
-            // Skip 
+            // Skip -> afiseaza restul
+            // Opusul lui Take
             var allButFirstThree = _animals.Skip(8);
 
 
@@ -54,23 +55,133 @@ namespace Linq
 
 
             // Take
+            // used to fetch the first “n” number of elements from the data source
+            var first3animals = _animals.Take(3);
 
-            //// TakeWhile
 
-            //// Chunk
-            //var chunkedResult = _students.Chunk(3);
+            // TakeWhile
+            // Diferenta intre TakeWhile si Where in Linq? 
+            // Where - aplica conditia pe toata lista de elemente, in timp ce takeWhile se opreste la primul bool = false;
+            var usersOutsideRomaniaV2 = _users.TakeWhile(user => user.Country == "Romania");
 
-            //// OfType
-            //var homeStudents = _students.OfType<HomeStudent>();
+
+            // Chunk
+            // Definitie - imparte datasetul in parti egale de cate N elemente
+            // Returneaza subseturi de cate N elemente 
+            var chunkedResult = _users.Chunk(3);
+            foreach (var subset in chunkedResult)
+            {
+                //PrintCollection(subset);
+            }
+
+
+            // OfType
+            // Returneaza doar elementele care contin tipul de date specificat
+            var dogsFromAnimals = _animals.OfType<Dog>();
         }
 
+        public static void Ordering()
+        {
+            // OrderBy, ThenBy
+            // ordoneaza crescator, apoi criterii secundare
+            var orderedByYear = _students.OrderBy(x => x.Year).ThenBy(x => x.FirstName).ThenBy(x => x.LastName);
+            var usersOrderedByNoOfAnimals = _users.OrderBy(x => x.Animals.Count).ThenBy(x => x.Email);
 
 
+            // OrderByDescending, ThenByDescending
+            var orderedByYearV2 = _students.OrderByDescending(x => x.Year).ThenBy(x => x.FirstName).ThenBy(x => x.LastName);
+            var usersOrderedByNoOfAnimalsV2 = _users.OrderByDescending(x => x.Animals.Count).ThenByDescending(x => x.Email);
 
 
+            // OrderByDescending, ThenByDescending -> old
+            var usersOrderedByNoOfAnimalsV3 = from users in _users
+                                              orderby users.Animals.Count() descending
+                                              select users;
 
 
+            // Reverse
+            var reverseUsers = _users.Reverse();
+        }
 
+        public static void Quantifiers()
+        {
+            // Any
+            // It will always return a bool
+            bool anyUser = _users.Any(x => x.Country == "Romania");
+
+            // All
+            // It will always return a bool
+            bool allUsers = _users.All(x => x.Animals.Count > 0);
+
+            // Contains
+            // It will always return a bool
+            var dog13 = new Dog() { AnimalId = 13, PetName = "Zoro", Gender = AnimalGender.female, Age = 15, DogBreed = DogBreeds.Boxer, UserId = 10 };
+            bool containsDog = _animals.Contains(dog13);
+
+            // SequenceEqual
+            // It will always return a bool
+            bool sequenceEqual = _users.SequenceEqual(_usersForSequence); // it is true
+        }
+
+        public static void Projection()
+        {
+            // Select (anonymus types)
+            // returns only a specific type
+            // putem returna o lista care contine doar firstName si sa aplicam anumite conditii
+            var firstNames = _users.Where(x => x.Animals.Count > 1).Select(x => x.FirstName);
+            var emails = _users.Select(x => x.Email);
+
+
+            // SelectMany
+            // putem returna lista din interiorul unui item
+            // putem returna toate animalele de la toti userii
+            // in interiorul clasei User, avem o lista de animale
+            var allStudents = _faculties.SelectMany(x => x.Students);
+            var allAnimals = _users.SelectMany(x => x.Animals);
+           
+            PrintCollection(allAnimals);
+        }
+
+        public static void Grouping()
+        {
+            // GroupBy
+            // putem grupa in key value pair dupa un criteriu
+            var groupedAnimalsByGender = _animals.GroupBy(x => x.Gender);
+
+            // se va face un key pentru fiecare criteriu din Gender
+            foreach (var gender in groupedAnimalsByGender)
+            {
+                Console.WriteLine(gender.Key);
+                foreach (var animal in gender)
+                {
+                    Console.WriteLine(animal);
+                }
+            }
+
+            // group cats by breed
+            var groupedCatsByBreed = _animals.OfType<Cat>().GroupBy(x => x.CatBreed);
+
+            // se va face un key pentru fiecare criteriu din Gender
+            foreach (var breed in groupedCatsByBreed)
+            {
+                Console.WriteLine(breed.Key);
+                foreach (var animal in breed)
+                {
+                    Console.WriteLine(animal);
+                }
+            }
+        }
+
+        public static void Generation()
+        {
+            // DefaultIfEmpty
+
+            // Empty
+
+            // Range
+
+            // Repeat
+        }
 
 
 
@@ -95,6 +206,7 @@ namespace Linq
 
 
         private static readonly IEnumerable<User> _users = CreateUserList();
+        private static readonly IEnumerable<User> _usersForSequence = _users.Where(x => x.Animals.Count > 0);
         private static IEnumerable<User> CreateUserList()
         {
             return new List<User>
@@ -136,6 +248,7 @@ namespace Linq
                     Animals = new List<Animal> { new Dog() {AnimalId = 13, PetName = "Zoro", Gender = AnimalGender.female, Age = 15, DogBreed = DogBreeds.Boxer, UserId = 10 } }},
             };
         }
+
 
         private static readonly IEnumerable<Animal> _animals = CreateAnimalsList();
         private static IEnumerable<Animal> CreateAnimalsList()
