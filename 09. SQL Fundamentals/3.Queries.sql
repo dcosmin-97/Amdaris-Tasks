@@ -70,9 +70,15 @@ LEFT JOIN Cats as c on c.UserId = u.ID
 Group by u.FirstName 
 ORDER BY u.FirstName
 
--- Show no. of dogs per user city
+-- Show no. of dogs from Pucioasa and Targoviste 
 Select u.City, Count(d.UserId) as 'No of dogs per city'
 FROM Users as u
 LEFT JOIN Dogs as d on d.UserId = u.ID
 Group by u.City 
+HAVING u.City IN ('Pucioasa', 'Targoviste')
 ORDER BY u.City
+
+-- Select no of users per email domain
+SELECT SUBSTRING(Email, CHARINDEX('@', Email), 100) as 'Email domain', Count(*) as Users
+FROM Users
+Group by SUBSTRING(Email, CHARINDEX('@', Email), 100)
