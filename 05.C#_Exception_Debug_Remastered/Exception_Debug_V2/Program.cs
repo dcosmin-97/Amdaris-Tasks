@@ -27,24 +27,23 @@ namespace Exception_Debug_V2
             try
             {
                 catId = int.Parse(Console.ReadLine());
+
+                CatController catController = new CatController();
+                try
+                {
+                    catReceived = catController.GetCatById(catId);
+                    Console.WriteLine($"Greetings from {catReceived.PetName}! Age: {catReceived.Age}, Gender: {catReceived.Gender}, Breed: {catReceived.Breed}");
+                }
+                catch (Exception exc)
+                {
+                    Console.WriteLine(exc.Message);
+                }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Please enter a valid input!");
+                Console.WriteLine("Please enter a valid id!");
             }
 
-
-            CatController catController = new CatController();
-            try
-            {
-                catReceived = catController.GetCatById(catId);
-                Console.WriteLine($"Greetings from {catReceived.PetName}! Age: {catReceived.Age}, Gender: {catReceived.Gender}, Breed: {catReceived.Breed}");
-            }
-            catch (Exception exc)
-            {
-                Console.WriteLine(exc.Message);
-                Console.WriteLine(exc.StackTrace);
-            }
         }
     }
 }
