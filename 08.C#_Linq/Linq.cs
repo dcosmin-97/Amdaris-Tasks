@@ -14,30 +14,143 @@ namespace Linq
         {
             //Joins();
 
-            string petName = "Ozzy";
-            if (petName.IsNameGood())
-                Console.WriteLine("Name updated!");
+            //string petName = "Ozzy";
+            //if (petName.IsNameGood())
+            //    Console.WriteLine("Name updated!");
 
-            int[] testArray = { 1, 2, 3, 4 };
-            Func<int, bool> predicate = number => number >= 3;
-            var result = testArray.ArrayFilter<int>(predicate);
-            //foreach (var item in result)
+            //int[] testArray = { 1, 2, 3, 4 };
+            //Func<int, bool> predicate = number => number >= 3;
+            //var result = testArray.ArrayFilter<int>(predicate);
+            ////foreach (var item in result)
+            ////{
+            ////    Console.WriteLine(item);
+            ////}
+
+            //Action<string> action = name =>
+            //{
+            //    string greeting = $"Hello {name}!";
+            //    Console.WriteLine(greeting);
+            //};
+
+            //List<string> testList = new List<string>() { "Ozzy", "Mery", "gigel", "trump", "Mog", "OnlyName" };
+            //Func<string, bool> predicate1 = name => name.Length >= 4;
+            //Func<string, bool> predicate2 = name => char.IsUpper(name[0]);
+            //var result2 = testList.ListFilter<string>(predicate1, predicate2);
+
+            //var result3 = testList.ListFilter2((name, count) => name.Length >= count);
+            //foreach (var item in result3)
             //{
             //    Console.WriteLine(item);
             //}
 
 
-            List<string> testList = new List<string>() { "Ozzy", "Mery", "gigel", "trump", "Mog", "OnlyName" };
-            Func<string, bool> predicate1 = name => name.Length >= 4;
-            Func<string, bool> predicate2 = name => char.IsUpper(name[0]);
-            var result2 = testList.ListFilter<string>(predicate1, predicate2);
+            // Tasks 
 
-            var result3 = testList.ListFilter2((name, count) => name.Length >= count);
-            foreach (var item in result3)
-            {
-                Console.WriteLine(item);
-            }
+            //1.Scrie un query al cărui rezultat va afișa pentru fiecare număr din
+            //array'ul dat: numărul și de cîte ori e întîlnit în acest array, spre 
+            //exemplu primul rezultat ar trebui să fie așa: { numar: 8, repetitii: 3 }
+            var array = new int[] { 8, 2, 3, 3, 5, 6, 5, 8, 9, 10, 1, 12, 2, 2, 25, 8, 16, 2 };
+            var res = array.GroupBy(x => x)
+                           .Select(x => new { numar = x.Key, repetitii = x.Count() });
+
+            //PrintCollection(res);
+
+            //2.Folosind array - ul din(1), scrie un query care ar întoarce numărul care se repetă de cele mai multe ori
+            var maxNumber = array.GroupBy(x => x)
+                                 .MaxBy(x => x.Count())
+                                 .First();
+            //Console.WriteLine(maxNumber);
+
+
+            //3.Crează un query care ar întoarce o listă care conține doar cuvintele comune ambelor colecții care încep cu litera "h"
+            string[] first = new string[] { "hello", "hi", "max", "good evening", "good day", "good morning", "goodbye" };
+            string[] second = new string[] { "whatsup", "how are you", "hello", "bye", "maybe", "hi" };
+
+            var newQuery = first.Intersect(second).Where(x => x[0] == 'h').ToList();
+            PrintCollection(newQuery);
+
+            //4. Folosind colecțiile din (3) crează un query care ar întoarce un string
+            //care conține doar ultimul caracter din fiecare colecție (ex: oigy…)
+            var allLetters = first.Concat(second).Aggregate("", (previewsResult, elem) => previewsResult + elem[elem.Length - 1], allNames => allNames);
+            Console.WriteLine(allLetters);
+
+            // 5. Considerînd structura de mai jos, În ce locații Germane au avut Elvis Presley concerte între anii 1950-1980
+            var _singers = GetSingers();
+            var _concerts = GetConcerts();
+
+            var result =    from singer in _singers
+                            join concert in _concerts on singer.Id equals concert.SingerId
+                            where singer.FirstName == "Elvis" && singer.LastName == "Presley" && concert.Country == "Germany"
+                            && concert.Year >= 1950 && concert.Year <= 1980
+                            select new { concert.Avenue };
+            PrintCollection(result);
         }
+
+
+        public static IEnumerable<Singer> GetSingers()
+        {
+            return new List<Singer>()
+        {
+            new Singer { Id = 1, FirstName = "Freddie", LastName = "Mercury"},
+            new Singer { Id = 2, FirstName = "Elvis", LastName = "Presley"},
+            new Singer { Id = 3, FirstName = "Chuck", LastName = "Berry"},
+            new Singer { Id = 4, FirstName = "Ray", LastName = "Charles"},
+            new Singer { Id = 5, FirstName = "David", LastName = "Bowie"}
+        };
+        }
+
+        public static IEnumerable<Concert> GetConcerts()
+        {
+            return new List<Concert>()
+        {
+            new Concert { SingerId = 2, Country = "Germany", Avenue = "Alianz", Year = 1979},
+            new Concert { SingerId = 1, Country = "USA", Avenue = "NYW", Year = 1980},
+            new Concert { SingerId = 1, Country = "Germany", Avenue = "Opera Nazional", Year = 1981},
+            new Concert { SingerId = 2, Country = "Germany", Avenue = "Berlin Arena", Year = 1970},
+            new Concert { SingerId = 2, Country = "Rusia", Avenue = "Lujniki", Year = 1968},
+            new Concert { SingerId = 3, Country = "UK", Avenue = "London Opera", Year = 1960},
+            new Concert { SingerId = 3, Country = "USA", Avenue = "Central Park", Year = 1961},
+            new Concert { SingerId = 2, Country = "Rusia", Avenue = "Red Square", Year = 1962},
+            new Concert { SingerId = 4, Country = "USA", Avenue = "Capitolium", Year = 1950},
+            new Concert { SingerId = 4, Country = "Romania", Avenue = "Arena nationala", Year = 1951},
+            new Concert { SingerId = 5, Country = "France", Avenue = "Verdun", Year = 1983}
+        };
+        }
+
+        public class Singer
+        {
+            public int Id { get; set; }
+
+            public string FirstName { get; set; }
+
+            public string LastName { get; set; }
+        }
+
+        public class Concert
+        {
+            public int SingerId { get; set; }
+
+            public string Avenue { get; set; }
+
+            public int Year { get; set; }
+
+            public string Country { get; set; }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         private static void PrintCollection<T>(IEnumerable<T> source)

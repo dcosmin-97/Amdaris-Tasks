@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Amdaris\\Amdaris-Tasks\\04.C#_DateTime_Strings\\Strings_Dates.csproj",
-      "projectName": "Strings_Dates",
-      "projectPath": "D:\\Amdaris\\Amdaris-Tasks\\04.C#_DateTime_Strings\\Strings_Dates.csproj",
+      "projectUniqueName": "D:\\Amdaris\\Amdaris-Tasks\\05.C#_Exception_Debug_Remastered\\Exception_Debug_V2\\Exception_Debug_V2.csproj",
+      "projectName": "Exception_Debug_V2",
+      "projectPath": "D:\\Amdaris\\Amdaris-Tasks\\05.C#_Exception_Debug_Remastered\\Exception_Debug_V2\\Exception_Debug_V2.csproj",
       "packagesPath": "C:\\Users\\Diaconescu Cosmin\\.nuget\\packages\\",
-      "outputPath": "D:\\Amdaris\\Amdaris-Tasks\\04.C#_DateTime_Strings\\obj\\",
+      "outputPath": "D:\\Amdaris\\Amdaris-Tasks\\05.C#_Exception_Debug_Remastered\\Exception_Debug_V2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Diaconescu Cosmin\\AppData\\Roaming\\NuGet\\NuGet.Config",

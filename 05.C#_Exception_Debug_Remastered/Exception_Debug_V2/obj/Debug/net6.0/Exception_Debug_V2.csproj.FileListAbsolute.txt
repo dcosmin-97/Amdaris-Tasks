@@ -1,0 +1,15 @@
+D:\Amdaris\Amdaris-Tasks\05.C#_Exception_Debug_Remastered\Exception_Debug_V2\bin\Debug\net6.0\Exception_Debug_V2.exe
+D:\Amdaris\Amdaris-Tasks\05.C#_Exception_Debug_Remastered\Exception_Debug_V2\bin\Debug\net6.0\Exception_Debug_V2.deps.json
+D:\Amdaris\Amdaris-Tasks\05.C#_Exception_Debug_Remastered\Exception_Debug_V2\bin\Debug\net6.0\Exception_Debug_V2.runtimeconfig.json
+D:\Amdaris\Amdaris-Tasks\05.C#_Exception_Debug_Remastered\Exception_Debug_V2\bin\Debug\net6.0\Exception_Debug_V2.dll
+D:\Amdaris\Amdaris-Tasks\05.C#_Exception_Debug_Remastered\Exception_Debug_V2\bin\Debug\net6.0\Exception_Debug_V2.pdb
+D:\Amdaris\Amdaris-Tasks\05.C#_Exception_Debug_Remastered\Exception_Debug_V2\obj\Debug\net6.0\Exception_Debug_V2.csproj.AssemblyReference.cache
+D:\Amdaris\Amdaris-Tasks\05.C#_Exception_Debug_Remastered\Exception_Debug_V2\obj\Debug\net6.0\Exception_Debug_V2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Amdaris\Amdaris-Tasks\05.C#_Exception_Debug_Remastered\Exception_Debug_V2\obj\Debug\net6.0\Exception_Debug_V2.AssemblyInfoInputs.cache
+D:\Amdaris\Amdaris-Tasks\05.C#_Exception_Debug_Remastered\Exception_Debug_V2\obj\Debug\net6.0\Exception_Debug_V2.AssemblyInfo.cs
+D:\Amdaris\Amdaris-Tasks\05.C#_Exception_Debug_Remastered\Exception_Debug_V2\obj\Debug\net6.0\Exception_Debug_V2.csproj.CoreCompileInputs.cache
+D:\Amdaris\Amdaris-Tasks\05.C#_Exception_Debug_Remastered\Exception_Debug_V2\obj\Debug\net6.0\Exception_Debug_V2.dll
+D:\Amdaris\Amdaris-Tasks\05.C#_Exception_Debug_Remastered\Exception_Debug_V2\obj\Debug\net6.0\refint\Exception_Debug_V2.dll
+D:\Amdaris\Amdaris-Tasks\05.C#_Exception_Debug_Remastered\Exception_Debug_V2\obj\Debug\net6.0\Exception_Debug_V2.pdb
+D:\Amdaris\Amdaris-Tasks\05.C#_Exception_Debug_Remastered\Exception_Debug_V2\obj\Debug\net6.0\Exception_Debug_V2.genruntimeconfig.cache
+D:\Amdaris\Amdaris-Tasks\05.C#_Exception_Debug_Remastered\Exception_Debug_V2\obj\Debug\net6.0\ref\Exception_Debug_V2.dll
