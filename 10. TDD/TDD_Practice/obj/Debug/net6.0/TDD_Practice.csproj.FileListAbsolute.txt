@@ -1,0 +1,15 @@
+D:\Amdaris\Amdaris-Tasks\10. TDD\TDD_Practice\obj\Debug\net6.0\TDD_Practice.csproj.AssemblyReference.cache
+D:\Amdaris\Amdaris-Tasks\10. TDD\TDD_Practice\obj\Debug\net6.0\TDD_Practice.GeneratedMSBuildEditorConfig.editorconfig
+D:\Amdaris\Amdaris-Tasks\10. TDD\TDD_Practice\obj\Debug\net6.0\TDD_Practice.AssemblyInfoInputs.cache
+D:\Amdaris\Amdaris-Tasks\10. TDD\TDD_Practice\obj\Debug\net6.0\TDD_Practice.AssemblyInfo.cs
+D:\Amdaris\Amdaris-Tasks\10. TDD\TDD_Practice\obj\Debug\net6.0\TDD_Practice.csproj.CoreCompileInputs.cache
+D:\Amdaris\Amdaris-Tasks\10. TDD\TDD_Practice\bin\Debug\net6.0\TDD_Practice.exe
+D:\Amdaris\Amdaris-Tasks\10. TDD\TDD_Practice\bin\Debug\net6.0\TDD_Practice.deps.json
+D:\Amdaris\Amdaris-Tasks\10. TDD\TDD_Practice\bin\Debug\net6.0\TDD_Practice.runtimeconfig.json
+D:\Amdaris\Amdaris-Tasks\10. TDD\TDD_Practice\bin\Debug\net6.0\TDD_Practice.dll
+D:\Amdaris\Amdaris-Tasks\10. TDD\TDD_Practice\bin\Debug\net6.0\TDD_Practice.pdb
+D:\Amdaris\Amdaris-Tasks\10. TDD\TDD_Practice\obj\Debug\net6.0\TDD_Practice.dll
+D:\Amdaris\Amdaris-Tasks\10. TDD\TDD_Practice\obj\Debug\net6.0\refint\TDD_Practice.dll
+D:\Amdaris\Amdaris-Tasks\10. TDD\TDD_Practice\obj\Debug\net6.0\TDD_Practice.pdb
+D:\Amdaris\Amdaris-Tasks\10. TDD\TDD_Practice\obj\Debug\net6.0\TDD_Practice.genruntimeconfig.cache
+D:\Amdaris\Amdaris-Tasks\10. TDD\TDD_Practice\obj\Debug\net6.0\ref\TDD_Practice.dll
