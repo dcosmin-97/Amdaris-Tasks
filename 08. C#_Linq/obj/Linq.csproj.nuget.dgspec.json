@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Amdaris\\Amdaris-Tasks\\08.C#_Linq\\Linq.csproj": {}
+    "D:\\Amdaris\\Amdaris-Tasks\\08. C#_Linq\\Linq.csproj": {}
   },
   "projects": {
-    "D:\\Amdaris\\Amdaris-Tasks\\08.C#_Linq\\Linq.csproj": {
+    "D:\\Amdaris\\Amdaris-Tasks\\08. C#_Linq\\Linq.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Amdaris\\Amdaris-Tasks\\08.C#_Linq\\Linq.csproj",
+        "projectUniqueName": "D:\\Amdaris\\Amdaris-Tasks\\08. C#_Linq\\Linq.csproj",
         "projectName": "Linq",
-        "projectPath": "D:\\Amdaris\\Amdaris-Tasks\\08.C#_Linq\\Linq.csproj",
+        "projectPath": "D:\\Amdaris\\Amdaris-Tasks\\08. C#_Linq\\Linq.csproj",
         "packagesPath": "C:\\Users\\Diaconescu Cosmin\\.nuget\\packages\\",
-        "outputPath": "D:\\Amdaris\\Amdaris-Tasks\\08.C#_Linq\\obj\\",
+        "outputPath": "D:\\Amdaris\\Amdaris-Tasks\\08. C#_Linq\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Diaconescu Cosmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
